@@ -15,9 +15,13 @@ def page2() -> st.Page:
     p=st.Page("pivot.py", title="Second page", icon=":material/favorite:")
     return p
 
+def page3() -> st.Page:
+    p=st.Page("pivot2.py", title="Second page", icon=":material/favorite:")
+    return p
+
 pg = st.navigation([
-    st.Page(page1, title="First page", icon="🔥"),
-    st.Page(page2, title="Second page", icon=":material/favorite:"),
+    st.Page(page2, title="First page", icon="🔥"),
+    st.Page(page3, title="Second page", icon=":material/favorite:"),
 ])
 pg.run()
 
