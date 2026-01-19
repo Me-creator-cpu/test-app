@@ -18,9 +18,10 @@ def read_csv(PATH: str) -> pd.DataFrame:
 
 
 with st.sidebar:
-    st.info('Test CSV')
+    st.info('This is my first web application with streamlit')
 
 
+# PATH = 'https://raw.githubusercontent.com/Lamy237/hello-world/main/pay.csv'
 PATH = 'https://support.staffbase.com/hc/en-us/article_attachments/360009159392/access-code.csv'
 
 df = read_csv(PATH)
